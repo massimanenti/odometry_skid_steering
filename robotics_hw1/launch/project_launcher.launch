@@ -1,0 +1,16 @@
+<launch>
+  <param name="estimated_baseline" value="1.004501" />
+  <param name="estimated_gearbox" value="38.461319" />
+  <param name="initial_pose_x" value="0"/>
+  <param name="initial_pose_y" value="0"/>
+  <param name="initial_pose_theta" value="0"/>
+
+  <node pkg="robotics_hw1" type="tf_publisher" name="my_tf_publisher"/>
+
+  <node pkg="robotics_hw1" type="synchro_motor" name="my_synchronizer"/>
+
+  <node pkg="robotics_hw1" type="differential_drive_velocities" name="my_differential_drive_velocities" />
+
+  <node pkg="robotics_hw1" type="compute_odom" name="my_compute_odom" output="screen" launch-prefix="gnome-terminal --command"/>
+
+</launch>
