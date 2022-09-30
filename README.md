@@ -1,7 +1,7 @@
 # odometry_skid_steering
 
 The goals of the project are:
-I. compute odometry using skid steering (approximate) kinematic
+I. compute odometry using skid steering (approximate) kinematic:
 - using Euler and Runge-Kutta integration
 - ROS parameter specifies initial pose
 II. use dynamic reconfigure to select between integration method
